@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0EC">
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Formulario de Ingreso de Alumnos"
+            android:textColor="#000"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/edtRut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el RUT"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el Nombre"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la Dirección"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edtNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="276dp"
+        android:backgroundTint="#B0B0AD"
+        android:onClick="onClickAgregar"
+        android:text="AGREGAR"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="276dp"
+        android:backgroundTint="#B0B0AD"
+        android:onClick="onClickEliminar"
+        android:text="ELIMINAR"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="276dp"
+        android:backgroundTint="#B0B0AD"
+        android:onClick="onClickModificar"
+        android:text="MODIFICAR"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ListView
+        android:id="@+id/listLista"
+        android:layout_width="376dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
